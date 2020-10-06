@@ -33,6 +33,9 @@ public class Orange implements Fruit
 		return prix;
     }
 
+    public String getNom(){
+        return "orange";
+    }
     public void setPrix(double prix)
     {
 		this.prix=prix;
