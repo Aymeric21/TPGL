@@ -4,7 +4,7 @@ package fr.ufrsciencestech.panier;
  *
  * @author roudet
  */
-public class Kiwi {              //modifie par C. Roudet
+public class Kiwi extends FruitSimple{              //modifie par C. Roudet
     private double prix;
     private String origine;
 	
@@ -66,4 +66,15 @@ public class Kiwi {              //modifie par C. Roudet
         //Ecrire ici vos tests
 	System.out.println("premier test Kiwi");
    }
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Kiwi(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }

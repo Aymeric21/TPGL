@@ -4,7 +4,7 @@ package fr.ufrsciencestech.panier;
  *
  * @author roudet
  */
-public class Orange implements Fruit
+public class Orange extends FruitSimple
 {
     private double prix;
     private String origine;
@@ -77,5 +77,16 @@ public class Orange implements Fruit
         //Ecrire ici vos tests
 		System.out.println("premier test Orange");
    	}
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Orange(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }
 

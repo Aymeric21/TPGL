@@ -1,6 +1,6 @@
 package fr.ufrsciencestech.panier;
 
-public class Banane
+public class Banane extends FruitSimple
 {
     private double prix;
     private String origine;
@@ -73,5 +73,16 @@ public class Banane
         //Ecrire ici vos tests
 		System.out.println("premier test Banane");
    	}
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Banane(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }
 

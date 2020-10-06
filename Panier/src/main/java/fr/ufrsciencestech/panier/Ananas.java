@@ -1,6 +1,6 @@
 package fr.ufrsciencestech.panier;
 
-public class Ananas {
+public class Ananas extends FruitSimple{
     private double prix;
     private String origine;
 	
@@ -70,5 +70,16 @@ public class Ananas {
 	System.out.println(o2.getPrix());
 	
    }
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Ananas(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }
 

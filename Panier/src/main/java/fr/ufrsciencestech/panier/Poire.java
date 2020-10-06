@@ -9,7 +9,7 @@ import fr.ufrsciencestech.panier.Fruit;
  *
  * @author roudet
  */
-public class Poire implements Fruit {
+public class Poire extends FruitSimple{
     private double prix;
     private String origine;
 	
@@ -71,4 +71,15 @@ public class Poire implements Fruit {
       Poire p=new Poire(0.5,"Portugal");
 	System.out.println(p.toString());
    }
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Poire(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }

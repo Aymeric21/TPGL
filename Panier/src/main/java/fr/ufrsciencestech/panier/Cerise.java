@@ -1,7 +1,7 @@
 package fr.ufrsciencestech.panier;
 
 
-public class Cerise {
+public class Cerise extends FruitSimple{
     private double prix;
     private String origine;
 	
@@ -67,4 +67,15 @@ public class Cerise {
     System.out.println("test");
 
    }
+
+    @Override
+    FruitSimple createFruit(double prix, String origine)
+    {
+        return new Cerise(prix, origine);
+    }
+
+    @Override
+    FruitSimple createFruitNull() {
+        return null;
+    }
 }
