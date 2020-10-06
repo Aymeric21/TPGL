@@ -33,6 +33,9 @@ public class Orange extends FruitSimple
 		return prix;
     }
 
+    public String getNom(){
+        return "orange";
+    }
     public void setPrix(double prix)
     {
 		this.prix=prix;

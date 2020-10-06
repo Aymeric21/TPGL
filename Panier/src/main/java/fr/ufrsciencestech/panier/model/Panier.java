@@ -1,6 +1,7 @@
 package fr.ufrsciencestech.panier.model;
 
 import fr.ufrsciencestech.panier.Fruit;
+import fr.ufrsciencestech.panier.Macedoine;
 import fr.ufrsciencestech.panier.Orange;
 import fr.ufrsciencestech.panier.PanierPleinException;
 import fr.ufrsciencestech.panier.PanierVideException;
@@ -123,6 +124,13 @@ public class Panier extends Observable{
         
         Orange o1 = new Orange();
         Orange o2 = new Orange(50, "France");
+        Macedoine mace = new Macedoine();
+        mace.ajout(o2);
+        mace.ajout(o1);
+        mace.ajout(o2);
+        ArrayList<Fruit> fruits = new ArrayList<Fruit>();
+       
+        Macedoine mace2 = new Macedoine(fruits);
         
         Panier panier = new Panier(5);
         
@@ -130,6 +138,8 @@ public class Panier extends Observable{
         {
             panier.ajout(o1);
             panier.ajout(o2);
+            mace.toString();
+            System.out.print(mace.toString());
         }
         catch(Exception e)
         {
