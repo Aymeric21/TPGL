@@ -16,6 +16,8 @@ public abstract class FruitSimple implements Fruit
     
     public abstract boolean isSeedless();
     
+    public abstract String getNom();
+    
     public double getPrix()
     {
         return this.prix;
@@ -28,12 +30,18 @@ public abstract class FruitSimple implements Fruit
     
     public void setPrix(double prix)
     {
-        this.prix = prix;
+        if(prix < 0)
+            this.prix = -prix;
+        else
+            this.prix = prix;
     }
     
     public void setOrigine(String origine)
     {
-        this.origine = origine;
+        if(origine.equals(""))
+            this.origine = "Origine inconnue";
+        else
+            this.origine = origine;
     }
     
 

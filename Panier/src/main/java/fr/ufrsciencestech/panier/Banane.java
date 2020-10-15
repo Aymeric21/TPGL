@@ -29,25 +29,6 @@ public class Banane extends FruitSimple
         return "Banane";
     }
 
-    public double getPrix()
-    {
-		return prix;
-    }
-
-    public void setPrix(double prix)
-    {
-		this.prix=prix;
-    }
-
-    public String getOrigine()
-    {
-		return origine;
-    }
- 
-    public void setOrigine(String origine)
-    {
-		this.origine=origine;
-    }
 
     @Override
     public String toString()

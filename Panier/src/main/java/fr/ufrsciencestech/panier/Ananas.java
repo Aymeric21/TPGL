@@ -28,22 +28,6 @@ public class Ananas extends FruitSimple{
         return "Ananas";
     }
 
-    public double getPrix(){
-	return prix;
-    }
-
-    public void setPrix(double prix){
-	this.prix=prix;
-    }
-
-    public String getOrigine(){
-	return origine;
-    }
- 
-    public void setOrigine(String origine){
-	this.origine=origine;
-    }
-
     @Override
     public String toString(){
         return "Ananas de " + origine + " a " + prix + " euros";
