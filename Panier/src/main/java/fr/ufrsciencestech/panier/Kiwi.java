@@ -26,6 +26,11 @@ public class Kiwi extends FruitSimple{              //modifie par C. Roudet
 	else
             this.origine = origine;   
     }
+    
+    public String getNom()
+    {
+        return "Kiwi";
+    }
 
     public double getPrix(){
 	return prix;

@@ -23,6 +23,11 @@ public class Banane extends FruitSimple
 		else
             this.origine = origine;   
     }
+    
+    public String getNom()
+    {
+        return "Banane";
+    }
 
     public double getPrix()
     {

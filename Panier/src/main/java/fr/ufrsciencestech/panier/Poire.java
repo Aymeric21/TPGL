@@ -31,6 +31,11 @@ public class Poire extends FruitSimple{
 	else
             this.origine = origine;   
     }
+    
+    public String getNom()
+    {
+        return "Poire";
+    }
 
     public double getPrix(){
 	return prix;

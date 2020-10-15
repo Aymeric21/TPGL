@@ -23,6 +23,11 @@ public class Cerise extends FruitSimple{
 	else
             this.origine = origine;   
     }
+    
+    public String getNom()
+    {
+        return "Cerise";
+    }
 
     public double getPrix(){
 	return prix;

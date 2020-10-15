@@ -4,7 +4,7 @@ public class Ananas extends FruitSimple{
     private double prix;
     private String origine;
 	
-    public Ananas()   //modifie par C. Roudet
+    public Ananas()
     {
         this.prix = 2;  //prix en euros
         this.origine="Bresil";
@@ -21,6 +21,11 @@ public class Ananas extends FruitSimple{
             this.origine = "Bresil";  //Espagne par défaut
 	else
             this.origine = origine;   
+    }
+    
+    public String getNom()
+    {
+        return "Ananas";
     }
 
     public double getPrix(){

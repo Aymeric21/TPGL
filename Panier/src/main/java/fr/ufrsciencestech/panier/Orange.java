@@ -28,28 +28,11 @@ public class Orange extends FruitSimple
             this.origine = origine;   
     }
 
-    public double getPrix()
-    {
-		return prix;
-    }
 
     public String getNom(){
         return "orange";
     }
-    public void setPrix(double prix)
-    {
-		this.prix=prix;
-    }
 
-    public String getOrigine()
-    {
-		return origine;
-    }
- 
-    public void setOrigine(String origine)
-    {
-		this.origine=origine;
-    }
 
     @Override
     public String toString()
